@@ -1,0 +1,1 @@
+-- Insert here the creation of the tables present on your api's domain;

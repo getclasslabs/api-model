@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  {apiname}:
+    image: getclass/{apiname}:latest
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        order: start-first
+    networks:
+      main:
+        aliases:
+          - {apiname}
+networks:
+  main:
+    external: true
